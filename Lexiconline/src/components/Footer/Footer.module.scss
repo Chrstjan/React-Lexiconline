@@ -1,0 +1,9 @@
+@use "../../styles/mixins" as m;
+@use "../../styles/variables" as v;
+
+.footerStyling {
+  @include m.flexBox(column, center, center, 1rem);
+  text-align: center;
+  background: v.$dark-green-color;
+  color: v.$main-white-color;
+}

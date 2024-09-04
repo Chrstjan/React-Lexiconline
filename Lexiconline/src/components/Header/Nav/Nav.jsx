@@ -5,11 +5,11 @@ export const Nav = () => {
   return (
     <>
       <nav>
-        <ul>
+        <ul className={style.navStyling}>
           <li>
             <NavLink
               style={({ isActive }) =>
-                isActive ? { color: "blue" } : { color: "black" }
+                isActive ? { color: "blue" } : { color: "white" }
               }
               to={"/"}
             >
@@ -19,11 +19,21 @@ export const Nav = () => {
           <li>
             <NavLink
               style={({ isActive }) =>
-                isActive ? { color: "blue" } : { color: "black" }
+                isActive ? { color: "blue" } : { color: "white" }
               }
               to={"/about"}
             >
               About
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              style={({ isActive }) =>
+                isActive ? { color: "blue" } : { color: "white" }
+              }
+              to={"/api"}
+            >
+              API
             </NavLink>
           </li>
         </ul>

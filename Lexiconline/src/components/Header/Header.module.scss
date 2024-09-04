@@ -1,0 +1,9 @@
+@use "../../styles/mixins" as m;
+@use "../../styles/variables" as v;
+
+.headerStyling {
+  position: relative;
+  background: v.$dark-green-color;
+  height: 70px;
+  z-index: 999;
+}
