@@ -3,11 +3,12 @@ import { Outlet, useLocation } from "react-router-dom";
 import { Header } from "../components/Header/Header";
 import { Nav } from "../components/Header/Nav/Nav";
 import { HeaderCircle } from "../components/Header/HeaderCircle/HeaderCircle";
+import { Logo } from "../components/Logo/Logo";
 import { Main } from "../components/Main/Main";
 import { Footer } from "../components/Footer/Footer";
 import { Wrapper } from "../components/Wrapper/Wrapper";
 import { FooterInfo } from "../components/Footer/FooterInfo.jsx/FooterInfo";
-import { Logo } from "../components/Logo/Logo";
+import { Hero } from "../components/Hero/Hero";
 
 export const MainLayout = () => {
   const location = useLocation();
@@ -25,6 +26,7 @@ export const MainLayout = () => {
         </HeaderCircle>
       </Header>
       <Main>
+        <Hero />
         <Outlet />
       </Main>
       <Footer>

@@ -3,6 +3,7 @@ import { MainLayout } from "./layouts/MainLayout";
 import { LandingPage } from "./pages/LandingPage";
 import { AboutPage } from "./pages/AboutPage";
 import "./App.scss";
+import { PageNotFound } from "./pages/PageNotFound";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <Route path={"/"} element={<MainLayout />}>
             <Route index element={<LandingPage />} />
             <Route path={"/about"} element={<AboutPage />} />
+            <Route path={"/*"} element={<PageNotFound />} />
           </Route>
         </Routes>
       </Router>
