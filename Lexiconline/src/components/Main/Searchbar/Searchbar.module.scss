@@ -1,0 +1,12 @@
+@use "../../../styles/mixins" as m;
+@use "../../../styles/variables" as v;
+
+.searchStyling {
+    @include m.flexBox(row, center, center, 0rem);
+
+    input {
+        border: 1px solid v.$dark-green-color;
+        border-radius: 64px;
+        padding: 0.6rem 1.6rem;
+    }
+}

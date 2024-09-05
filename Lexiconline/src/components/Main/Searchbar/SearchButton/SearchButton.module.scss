@@ -1,0 +1,11 @@
+@use "../../../../styles/variables" as v;
+
+.buttonStyling {
+    border: 0;
+    background: v.$dark-green-color;
+    border-top-right-radius: 64px;
+    border-bottom-right-radius: 64px;
+    padding: 0.6rem 1.2rem;
+    color: v.$light-gray-color;
+    margin-left: -5rem;
+}

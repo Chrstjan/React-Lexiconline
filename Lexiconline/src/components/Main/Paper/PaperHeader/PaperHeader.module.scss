@@ -1,0 +1,14 @@
+@use "../../../../styles/mixins" as m;
+@use "../../../../styles/placeholders";
+
+.headerStyling {
+    @include m.flexBox(row, center, center);
+
+    img {
+        width: 40%;
+    }
+
+    h2 {
+        @extend %karma-font;
+    }
+}
