@@ -1,6 +1,15 @@
 @use "../../../../styles/variables" as v;
+@use "../../../../styles/placeholders";
 
 .wordStyling {
     padding: 0rem 0.8rem;
     margin-bottom: 1rem;
+    @extend %karma-font;
+
+    h4 {
+        color: v.$dark-green-color;
+        font-size: 20px;
+        text-transform: capitalize;
+    }
+
 }

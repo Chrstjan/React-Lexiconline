@@ -27,8 +27,8 @@ export const LandingPage = () => {
         {data ? <PaperHeader word={data.word}/>: null}
         {data ? <PaperBody>
           <WordNoun word={data.meanings} headerText="Synonyms"/>
-          <WordVerb words={data.meanings}/>
-          <WordInterjection word={data.meanings}/>
+          {data.meanings[1] ? <WordVerb words={data.meanings}/> : null}
+          {data.meanings[2] ? <WordInterjection word={data.meanings}/>: null}
         </PaperBody> : null}
       </Paper>
     </Wrapper>

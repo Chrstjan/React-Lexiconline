@@ -4,7 +4,7 @@ export const WordNoun = ({word, headerText}) => {
     return (
         <>
             <span>
-                    <h4>{word[0].partOfSpeech}:</h4>
+                    {word[0].partOfSpeech ? <h4>{word[0].partOfSpeech}:</h4> : null}
                      {word[0].definitions.map((def, index) => {
                         return (
                             <>
@@ -19,6 +19,14 @@ export const WordNoun = ({word, headerText}) => {
                         return (
                             <>
                                 {syn ? <p key={index}>{syn}</p> : <p>Not found</p>}
+                            </>
+                        )
+                    })}
+                    <h5>Antonyms</h5>
+                    {word[0].antonyms.map((ant) => {
+                        return (
+                            <>
+                                {ant ? <p key={ant}>{ant}</p>: null}
                             </>
                         )
                     })}
