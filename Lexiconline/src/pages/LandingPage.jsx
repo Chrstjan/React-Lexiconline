@@ -4,23 +4,32 @@ import { MainHeader } from "../components/Main/MainHeader/MainHeader";
 import { Searchbar } from "../components/Main/Searchbar/Searchbar";
 import { Wrapper } from "../components/Wrapper/Wrapper"
 import { PaperHeader } from "../components/Main/Paper/PaperHeader/PaperHeader";
+import { PaperBody } from "../components/Main/Paper/PaperBody/PaperBody";
+import { WordNoun } from "../components/Main/Paper/PaperBody/Word/WordNoun/WordNoun";
+import { WordVerb } from "../components/Main/Paper/PaperBody/Word/WordVerb/WordVerb";
+import { WordInterjection } from "../components/Main/Paper/PaperBody/Word/WordInterjection/WordInterjection";
 
 export const LandingPage = () => {
-  const [word, setWord] = useState("");
+  const [data, setData] = useState("");
 
   useEffect(() => {
-    console.log("Landing", word);
-  }, [word])
+    console.log("Landing", data);
+  }, [data])
 
   return <>
     <Wrapper>
       <MainHeader headerText="Enter a word to search for">
-        <Searchbar wordObject={setWord}/>
+        <Searchbar wordObject={setData}/>
       </MainHeader>
     </Wrapper>
     <Wrapper>
       <Paper>
-        <PaperHeader />
+        {data ? <PaperHeader word={data.word}/>: null}
+        {data ? <PaperBody>
+          <WordNoun word={data.meanings} headerText="Synonyms"/>
+          <WordVerb words={data.meanings}/>
+          <WordInterjection word={data.meanings}/>
+        </PaperBody> : null}
       </Paper>
     </Wrapper>
   </>;

@@ -14,7 +14,7 @@ export const Searchbar = ({wordObject}) => {
         let url = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`
         const res = await fetch(url);
         const data = await res.json();
-        wordObject(data);
+        wordObject(data[0]);
     }
 
     return (
