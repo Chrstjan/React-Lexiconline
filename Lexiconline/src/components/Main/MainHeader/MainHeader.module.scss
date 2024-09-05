@@ -3,20 +3,21 @@
 @use "../../../styles/placeholders";
 
 .headerStyling {
-    @include m.flexBox(column, center, center);
-    background: v.$light-gray-color;
-    width: 150px;
-    height: 170px;
-    margin-left: 7%;
-    border-radius: 8px;
-    padding: 0rem 5rem;
-    position: absolute;
-    top: 40%;
-    z-index: 9999;
+  @include m.flexBox(column, center, center);
+  background: v.$light-gray-color;
+  width: 150px;
+  height: 170px;
+  margin-left: 7%;
+  border-radius: 8px;
+  padding: 0rem 5rem;
+  position: absolute;
+  top: 40%;
+  z-index: 9999;
 
-    h2 {
-        color: v.$dark-gray-color;
-        width: 299px;
-        margin: 0;
-    }
+  h2 {
+    color: v.$dark-gray-color;
+    width: 299px;
+    margin: 0;
+    text-align: center;
+  }
 }
