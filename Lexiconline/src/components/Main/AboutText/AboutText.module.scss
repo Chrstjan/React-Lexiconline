@@ -2,30 +2,33 @@
 @use "../../../styles/placeholders";
 
 header {
-    .headerStyling {
-        @extend .textStyling;
-        margin: 0;
-        padding-right: 9.5rem;
-        width: 150px;
+  .headerStyling {
+    @extend .textStyling;
+    margin: 0;
+    padding-right: 9.5rem;
+    width: 150px;
+
+    @media (min-width: 1440px) {
+      padding-right: 53rem;
     }
+  }
 }
 
 .textStyling {
-    @extend %karla-font;
-    margin: 0;
-    @include m.flexBox(column, center, flex-start);
+  @extend %karla-font;
+  margin: 0;
+  @include m.flexBox(column, center, flex-start);
 
+  li::marker {
+    padding-right: 0;
+  }
 
-    li::marker {
-        padding-right: 0;
+  p {
+    .footerText {
+      p {
+        margin: 0;
+        text-decoration: underline;
+      }
     }
-
-    p {
-        .footerText {
-            p {
-                margin: 0;
-                text-decoration: underline;
-            }
-        }
-    }
+  }
 }

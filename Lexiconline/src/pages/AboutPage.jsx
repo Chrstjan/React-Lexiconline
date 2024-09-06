@@ -27,20 +27,25 @@ export const AboutPage = () => {
             completely free. We believe that learning should be a joyful and lifelong journey, and we're here to
             support you every step of the way."
           />
-          <AboutText headerText="Why Lexiconline?" 
-          listTextOne="Completely Free: Lexiconline is a passion project created with the belief that knowledge should
+          <AboutText
+            headerText="Why Lexiconline?"
+            listTextOne="Completely Free: Lexiconline is a passion project created with the belief that knowledge should
           be accessible to everyone. There are no fees, no subscriptions—just pure learning, always at your fingertips, "
-          listTextTwo=" Easy to Use: Our platform is designed with you in mind. Whether you’re searching for a word’s
+            listTextTwo=" Easy to Use: Our platform is designed with you in mind. Whether you’re searching for a word’s
           meaning, synonyms, or usage examples, you’ll Ànd everything you need in one place, with a
           simple, intuitive interface."
-          listTextThree="Explore and Learn: Every word you look up is an opportunity to learn something new. We
+            listTextThree="Explore and Learn: Every word you look up is an opportunity to learn something new. We
           encourage you to explore the richness of language, expand your vocabulary, and discover the joy
           that comes from understanding and using new words."
           />
-          <AboutText headerText="A special thanks" footerText="Without all the amazing work done at the people who made" footerLink="https://dictionaryapi.dev/ none of this
+          <AboutText
+            headerText="A special thanks"
+            footerText="Without all the amazing work done at the people who made"
+            footerLink="https://dictionaryapi.dev/ none of this
           would have been possible. Their API is completely free for anyone to develop with and we encourage
           you to visit their site. So much so, that we have included a direct link to their site in the navigation
-          on this site."/>
+          on this site."
+          />
         </Paper>
       </Wrapper>
     </>

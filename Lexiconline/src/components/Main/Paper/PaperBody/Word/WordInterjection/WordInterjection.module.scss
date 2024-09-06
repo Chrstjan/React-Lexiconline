@@ -1,7 +1,38 @@
 .wordWrapper {
-    
-}
+  header {
+    @media (min-width: 1440px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 25rem;
 
-.interStyling {
-    background: red;
+      p {
+        padding-right: 25rem;
+      }
+    }
+  }
+  div {
+    @media (min-width: 1440px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+
+    .defStyling {
+      p {
+        @media (min-width: 1440px) {
+          width: 320px;
+        }
+      }
+    }
+
+    .exampleStyling {
+      @media (min-width: 1440px) {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+    }
+  }
 }
