@@ -11,7 +11,7 @@ export const LandingPage = () => {
   const [data, setData] = useState("");
 
   useEffect(() => {
-    console.log("Landing", data);
+    console.log(data);
   }, [data]);
 
   return (
@@ -23,9 +23,13 @@ export const LandingPage = () => {
       </Wrapper>
       <Wrapper>
         <Paper>
-          {data ? <PaperHeader word={data[0].word} /> : null}
+          {data ? <PaperHeader word={data[0]?.word} /> : null}
           {data ? (
-            <PaperBody>{data ? <Words words={data} /> : null}</PaperBody>
+            <PaperBody>
+              {data && data.title != "No Definitions Found" ? (
+                <Words words={data} />
+              ) : null}
+            </PaperBody>
           ) : null}
         </Paper>
       </Wrapper>

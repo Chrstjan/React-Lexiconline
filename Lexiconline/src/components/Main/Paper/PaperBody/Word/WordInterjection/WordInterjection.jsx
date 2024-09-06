@@ -5,12 +5,12 @@ export const WordInterjection = ({ word }) => {
     <>
       <section className={style.wordWrapper}>
         <header>
-          {word.partOfSpeech ? <h4>{word.partOfSpeech}:</h4> : null}
+          {word?.partOfSpeech ? <h4>{word.partOfSpeech}:</h4> : null}
           <p>Example:</p>
         </header>
         <div>
           <span className={style.defStyling}>
-            {word.definitions.map((def, index) => {
+            {word?.definitions.map((def, index) => {
               return (
                 <>
                   <p>
@@ -21,7 +21,7 @@ export const WordInterjection = ({ word }) => {
             })}
           </span>
           <span className={style.exampleStyling}>
-            {word.definitions.map((def, index) => {
+            {word?.definitions.map((def, index) => {
               return (
                 <>
                   <p>
