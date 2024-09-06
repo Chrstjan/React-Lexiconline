@@ -1,3 +1,6 @@
+@use "../../styles/variables" as *;
+
 .mainStyling {
   min-height: 99vh;
+  background: $gray-white-color;
 }

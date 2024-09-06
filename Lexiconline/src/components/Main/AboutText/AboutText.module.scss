@@ -1,0 +1,31 @@
+@use "../../../styles/mixins" as m;
+@use "../../../styles/placeholders";
+
+header {
+    .headerStyling {
+        @extend .textStyling;
+        margin: 0;
+        padding-right: 9.5rem;
+        width: 150px;
+    }
+}
+
+.textStyling {
+    @extend %karla-font;
+    margin: 0;
+    @include m.flexBox(column, center, flex-start);
+
+
+    li::marker {
+        padding-right: 0;
+    }
+
+    p {
+        .footerText {
+            p {
+                margin: 0;
+                text-decoration: underline;
+            }
+        }
+    }
+}

@@ -4,7 +4,7 @@
 
 .headerStyling {
   @include m.flexBox(column, center, center);
-  background: v.$light-gray-color;
+  background: v.$gray-white-color;
   width: 150px;
   height: 170px;
   margin-left: 7%;

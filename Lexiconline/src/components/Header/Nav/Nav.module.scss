@@ -1,4 +1,5 @@
 @use "../../../styles/mixins" as m;
+@use "../../../styles/variables" as v;
 @use "../../../styles/placeholders";
 
 .navStyling {
@@ -13,6 +14,7 @@
 
     a {
       text-decoration: none;
+      color: v.$main-white-color;
     }
   }
 }

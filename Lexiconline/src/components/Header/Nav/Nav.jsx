@@ -9,7 +9,7 @@ export const Nav = () => {
           <li>
             <NavLink
               style={({ isActive }) =>
-                isActive ? { color: "blue" } : { color: "white" }
+                isActive ? { textDecoration: "underline", color: "white" } : { color: "white" }
               }
               to={"/"}
             >
@@ -19,7 +19,7 @@ export const Nav = () => {
           <li>
             <NavLink
               style={({ isActive }) =>
-                isActive ? { color: "blue" } : { color: "white" }
+                isActive ? { textDecoration: "underline", color: "white" } : { color: "white" }
               }
               to={"/about"}
             >
@@ -27,14 +27,7 @@ export const Nav = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink
-              style={({ isActive }) =>
-                isActive ? { color: "blue" } : { color: "white" }
-              }
-              to={"/api"}
-            >
-              API
-            </NavLink>
+            <a href="https://dictionaryapi.dev/" target="_blank">API</a>
           </li>
         </ul>
       </nav>
