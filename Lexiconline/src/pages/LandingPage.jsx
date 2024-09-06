@@ -5,9 +5,7 @@ import { Searchbar } from "../components/Main/Searchbar/Searchbar";
 import { Wrapper } from "../components/Wrapper/Wrapper";
 import { PaperHeader } from "../components/Main/Paper/PaperHeader/PaperHeader";
 import { PaperBody } from "../components/Main/Paper/PaperBody/PaperBody";
-import { WordNoun } from "../components/Main/Paper/PaperBody/Word/WordNoun/WordNoun";
-import { WordVerb } from "../components/Main/Paper/PaperBody/Word/WordVerb/WordVerb";
-import { WordInterjection } from "../components/Main/Paper/PaperBody/Word/WordInterjection/WordInterjection";
+import { Words } from "../components/Main/Paper/PaperBody/Word/Words";
 
 export const LandingPage = () => {
   const [data, setData] = useState("");
@@ -25,15 +23,9 @@ export const LandingPage = () => {
       </Wrapper>
       <Wrapper>
         <Paper>
-          {data ? <PaperHeader word={data.word} /> : null}
+          {data ? <PaperHeader word={data[0].word} /> : null}
           {data ? (
-            <PaperBody>
-              <WordNoun word={data.meanings} headerText="Synonyms" />
-              {data.meanings[1] ? <WordVerb words={data.meanings} /> : null}
-              {data.meanings[2] ? (
-                <WordInterjection word={data.meanings} />
-              ) : null}
-            </PaperBody>
+            <PaperBody>{data ? <Words words={data} /> : null}</PaperBody>
           ) : null}
         </Paper>
       </Wrapper>
