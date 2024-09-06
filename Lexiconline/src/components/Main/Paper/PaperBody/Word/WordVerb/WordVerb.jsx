@@ -1,7 +1,6 @@
 import style from "./WordVerb.module.scss";
 
 export const WordVerb = ({ words }) => {
-  console.log(words);
   return (
     <>
       <span className={style.verbStyling}>
