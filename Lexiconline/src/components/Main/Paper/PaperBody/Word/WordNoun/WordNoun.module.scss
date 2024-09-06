@@ -1,5 +1,16 @@
-.wordStyling {
-    display: block;
-    width: 100%;
-    border-bottom: 2px solid #00000071;
+
+
+.wordWrapper {
+    border-bottom: 2px solid #00000071; 
+    @media (min-width: 1440px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 25rem;
+    }
+
+    .wordStyling {
+        display: block;
+        width: 100%;
+    }
 }

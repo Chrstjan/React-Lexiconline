@@ -3,6 +3,7 @@ import style from "./WordNoun.module.scss";
 export const WordNoun = ({word, headerText}) => {
     return (
         <>
+        <section className={style.wordWrapper}>
             <span>
                     {word[0].partOfSpeech ? <h4>{word[0].partOfSpeech}:</h4> : null}
                      {word[0].definitions.map((def, index) => {
@@ -31,6 +32,7 @@ export const WordNoun = ({word, headerText}) => {
                         )
                     })}
                 </span>
+        </section>
         </>
     )
 }

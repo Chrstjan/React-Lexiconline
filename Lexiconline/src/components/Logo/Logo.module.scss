@@ -18,6 +18,11 @@
     height: 60px;
     background: v.$light-green-color;
     border-radius: 100%;
+
+    @media (min-width: 1440px) {
+      width: 76px;
+      height: 76px;
+    }
   
     img {
       margin-top: 12%;

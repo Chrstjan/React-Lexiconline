@@ -3,6 +3,7 @@ import style from "./WordInterjection.module.scss";
 export const WordInterjection = ({word}) => {
     return (
         <>
+            <section className={style.wordWrapper}>
             <span className={style.interStyling}>
                 {word[2].partOfSpeech ? <h4>{word[2].partOfSpeech}:</h4>: null}
                 {word[2].definitions.map((def, index) => {
@@ -25,6 +26,7 @@ export const WordInterjection = ({word}) => {
                     )
                 })}
             </span>
+            </section>
         </>
     )
 }
