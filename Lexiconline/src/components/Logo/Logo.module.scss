@@ -1,24 +1,42 @@
+@use "../../styles/mixins" as m;
 @use "../../styles/variables" as v;
 @use "../../styles/placeholders";
 
-.logoStyling {
-  display: block;
-  width: 60px;
-  height: 60px;
-  background: v.$light-green-color;
-  border-radius: 100%;
+.logoContainer {
+  @include m.flexBox(column, center, center, 0.5rem);
 
-  img {
-    margin-top: 12%;
-    margin-left: 5%;
-    width: 70%;
-    filter: invert(100%);
+  & {
+    @media (min-width: 1440px) {
+      margin-right: 7rem;
+      margin-top: 2rem;
+    }
+  }
+
+  .logoStyling {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: v.$light-green-color;
+    border-radius: 100%;
+  
+    img {
+      margin-top: 12%;
+      margin-left: 5%;
+      width: 70%;
+      filter: invert(100%);
+
+      @media (min-width: 1400px) {
+        margin-left: 1%;
+       }
+    }
+  }
+  h3 {
+    @extend %marck-font;
+    font-weight: 400;
+    font-size: 26px;
+    margin: 0;
+    padding-bottom: 1rem;
   }
 }
-h3 {
-  @extend %marck-font;
-  font-weight: 400;
-  font-size: 26px;
-  margin: 0;
-  padding-bottom: 1rem;
-}
+
+

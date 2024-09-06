@@ -11,6 +11,14 @@
   background-size: 580px;
   background-repeat: no-repeat;
 
+  & {
+    @media (min-width: 1440px) {
+      width: 100%;
+      background-size: cover;
+      height: 45vh;
+    }
+  }
+
   h2 {
     position: absolute;
     top: 20%;
@@ -21,5 +29,14 @@
     @extend %marck-font;
     font-weight: 400;
     font-size: 50px;
+
+    & {
+      @media (min-width: 1440px) {
+        top: 5%;
+        font-size: 128px;
+        text-shadow: 1px 2px #00000050;
+        
+      }
+    }
   }
 }

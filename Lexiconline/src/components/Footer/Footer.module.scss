@@ -6,4 +6,13 @@
   text-align: center;
   background: v.$dark-green-color;
   color: v.$main-white-color;
+
+  & {
+    @media (min-width: 1440px) {
+      height: 12.5rem;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
 }

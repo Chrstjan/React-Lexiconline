@@ -8,4 +8,17 @@
     padding: 0.6rem 1.2rem;
     color: v.$light-gray-color;
     margin-left: -5rem;
+
+    & {
+        @media (min-width: 1440px) {
+            padding: 0.8rem 1.6rem;
+            margin-left: -5.8rem;
+            font-size: 18px;
+
+            &:hover {
+                scale: 1.02;
+                cursor: pointer;
+            }
+        }
+    }
 }

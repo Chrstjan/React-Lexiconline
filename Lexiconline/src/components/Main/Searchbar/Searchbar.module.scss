@@ -8,5 +8,12 @@
         border: 1px solid v.$dark-green-color;
         border-radius: 64px;
         padding: 0.6rem 1.6rem;
+
+        & {
+            @media (min-width: 1440px) {
+                width: 300px;
+                padding: 0.9rem 1.6rem;
+            }
+        }
     }
 }

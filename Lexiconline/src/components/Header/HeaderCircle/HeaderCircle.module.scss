@@ -11,12 +11,30 @@
   background: v.$dark-green-color;
   z-index: 99;
 
+  & {
+    @media (min-width: 1440px) {
+      min-width: 250px;
+      height: 250px;
+      margin-top: -5%;
+      margin-left: 44%;
+
+    }
+  
+  }
+
   span {
     width: 75px;
     height: 75px;
     position: absolute;
     top: 88%;
     left: 38%;
+
+    & {
+      @media (min-width: 1440px) {
+        left: 48.5%;
+        top: 110%;
+      }
+    }
 
     img {
       margin-left: 17%;

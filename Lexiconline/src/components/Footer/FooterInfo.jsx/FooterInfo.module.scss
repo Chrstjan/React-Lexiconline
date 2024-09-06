@@ -1,6 +1,24 @@
+@use "../../../styles/mixins" as m;
 @use "../../../styles/placeholders";
 
 .infoStyling {
+  @include m.flexBox(column, center, center, 0.2rem);
   @extend %karma-font;
-  text-align: center;
+
+  header {
+    h4 {
+      margin: 0;
+    }
+  }
+
+
+  p {
+    margin: 0;
+  }
+
+  & {
+    @media (min-width: 1440px) {
+
+    }
+  }
 }

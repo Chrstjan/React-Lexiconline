@@ -30,7 +30,7 @@ export const MainLayout = () => {
         <Outlet />
       </Main>
       <Footer>
-        <Wrapper>
+        <Wrapper display="footerGrid">
           <FooterInfo
             header="Address:"
             textOne="Somestreet 232"
