@@ -23,7 +23,7 @@ export const LandingPage = () => {
       </Wrapper>
       <Wrapper>
         <Paper>
-          {data ? <PaperHeader word={data[0]?.word} /> : null}
+          {data ? <PaperHeader word={data[0]} /> : null}
           {data ? (
             <PaperBody>
               {data && data.title != "No Definitions Found" ? (
